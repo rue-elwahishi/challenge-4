@@ -7,7 +7,16 @@
 //The function should never return undefined
 
 function operateOn(firstNumber, secondNumber, operation) {
-  //TODO: your code here
+  if (operation === 0){
+    return firstNumber + secondNumber;
+  }
+  else if (operation === 1){
+    return firstNumber * secondNumber;
+  }
+  else if (operation === 2){
+   return  firstNumber/secondNumber
+  }
+  else return 'Nothing to operare on'
 }
 
 //========================================================== 2
@@ -17,18 +26,50 @@ function operateOn(firstNumber, secondNumber, operation) {
 //Write the function using while loop and for loop
 
 function addArraysWhileLoop(firstArray, secondArray) {
-  //TODO: your code here
+
+  var result = []
+  var i = 0
+  i++
+  while ( i < firstArray.length){
+
+  
+
+  }
 }
 
 function addArraysForLoop(firstArray, secondArray) {
-  //TODO: you code here
+  var newArr = [];
+  var anotherArr = []
+  for(var i = 0; i < firstArray.length; i++) {
+    for(var j = 0; j < secondArray.length; j++){
+      if ( firstArray.length === secondArray.length && i === j){
+        newArr.push(firstArray[i] + secondArray[j])
+      }
+      else if (firstArray.length > secondArray.length && i > j){
+        var result = 1;
+        result += firstArray[i]
+        return firstArray
+
+      }
+      else if (secondArray.length > firstArray.length && j > i) {
+        var reslut2 = 1;
+        reslut2 += secondArray[j]
+        return secondArray;
+
+    }
+  } 
+  }
+  return newArr;
 }
 
 //=========================================================== 3
 //Using recursion, return the sum of all of the positives numbers of an array of numbers.
 // posSum[1,-4,7,12] => 1 + 7 + 12 = 20
-
-//TODO: you code here
+ function sumPositiveNumbers(array){
+  for ( var i = 0; i < array.length; i++){
+    if (array[i] === )
+  }
+ }
 
 //=========================================================== 4
 //I have a bucket of sloths. Each sloth is special and has a long name.
